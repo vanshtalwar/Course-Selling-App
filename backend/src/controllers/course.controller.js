@@ -1,4 +1,4 @@
-export const seeCourse = async (req, res) => {
+export const preview = async (req, res) => {
     try {
        await res.status(200).json({ message: "all courses" })
     } catch (error) {
@@ -7,16 +7,8 @@ export const seeCourse = async (req, res) => {
     }
 }
 
-export const seePuchasedCourse = async (req, res) => {
-    try {
-       await res.status(200).json({ message: "all Puchased Course" })
-    } catch (error) {
-        res.status(400).json({ message: "error in seePuchasedCourse controller" })
 
-    }
-}
-
-export const purchaseCourse = async (req, res) => {
+export const purchase = async (req, res) => {
     try {
        await res.status(200).json({ message: "purchase Course" })
     } catch (error) {
@@ -25,29 +17,3 @@ export const purchaseCourse = async (req, res) => {
     }
 }
 
-export const createCourse = async (req, res) => {
-    try {
-       await res.status(200).json({ message: "create Course" })
-    } catch (error) {
-        res.status(400).json({ message: "error in createCourse controller" })
-
-    }
-}
-
-export const updateCourse = async (req, res) => {
-    try {
-       await res.status(200).json({ message: "update Course" })
-    } catch (error) {
-        res.status(400).json({ message: "error in updateCourse controller" })
-
-    }
-}
-
-export const DeleteCourse = async (req, res) => {
-    try {
-       await res.status(200).json({ message: "delete Course" })
-    } catch (error) {
-        res.status(400).json({ message: "error in DeleteCourse controller" })
-
-    }
-}

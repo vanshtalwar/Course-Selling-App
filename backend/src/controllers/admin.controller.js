@@ -24,3 +24,30 @@ export const logout = async (req, res) => {
 
     }
 }
+
+export const createCourse = async (req, res) => {
+    try {
+       await res.status(200).json({ message: "create Course" })
+    } catch (error) {
+        res.status(400).json({ message: "error in createCourse controller" })
+
+    }
+}
+
+export const updateCourse = async (req, res) => {
+    try {
+       await res.status(200).json({ message: "update Course" })
+    } catch (error) {
+        res.status(400).json({ message: "error in updateCourse controller" })
+
+    }
+}
+
+export const DeleteCourse = async (req, res) => {
+    try {
+       await res.status(200).json({ message: "delete Course" })
+    } catch (error) {
+        res.status(400).json({ message: "error in DeleteCourse controller" })
+
+    }
+}

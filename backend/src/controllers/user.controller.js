@@ -24,3 +24,12 @@ export const logout = async (req, res) => {
 
     }
 }
+
+export const purchases = async (req, res) => {
+    try {
+       await res.status(200).json({ message: "user;s purchased courses" })
+    } catch (error) {
+        res.status(400).json({ message: "error in user's purchases controller" })
+
+    }
+}
