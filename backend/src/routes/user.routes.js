@@ -1,5 +1,5 @@
 import express from "express";
-import { login, logout, purchase, purchases, signup } from "../controllers/user.controller.js";
+import { login, logout, purchases, signup } from "../controllers/user.controller.js";
 const router = express.Router()
 
 router.post("/signup", signup)
