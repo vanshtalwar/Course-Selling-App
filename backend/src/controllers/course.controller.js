@@ -7,6 +7,15 @@ export const seeCourse = async (req, res) => {
     }
 }
 
+export const seePuchasedCourse = async (req, res) => {
+    try {
+       await res.status(200).json({ message: "all Puchased Course" })
+    } catch (error) {
+        res.status(400).json({ message: "error in seePuchasedCourse controller" })
+
+    }
+}
+
 export const purchaseCourse = async (req, res) => {
     try {
        await res.status(200).json({ message: "purchase Course" })

@@ -1,12 +1,3 @@
-export const users = async (req, res) => {
-    try {
-       await res.status(200).json({ message: "all users" })
-    } catch (error) {
-        res.status(400).json({ message: "error in users controller" })
-
-    }
-}
-
 export const signup = async (req, res) => {
     try {
        await res.status(200).json({ message: "Signup" })
